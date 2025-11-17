@@ -27,9 +27,9 @@ export default function FeaturesSection() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-sake-cream">
+    <section className="py-16 md:py-24 bg-primary-green/10">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-sake-dark">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-accent-orange">
           当社の特徴
         </h2>
 
@@ -37,13 +37,13 @@ export default function FeaturesSection() {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="bg-white rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300"
+              className="bg-primary-green rounded-lg shadow-lg p-6 text-center hover:shadow-xl transition duration-300 border border-accent-orange/30"
             >
               <div className="text-5xl mb-4">{feature.icon}</div>
-              <h3 className="text-xl font-bold text-sake-dark mb-2">
+              <h3 className="text-xl font-bold text-accent-orange mb-2">
                 {feature.title}
               </h3>
-              <p className="text-gray-600 text-sm">{feature.description}</p>
+              <p className="text-text-light/80 text-sm">{feature.description}</p>
             </div>
           ))}
         </div>

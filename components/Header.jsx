@@ -11,7 +11,7 @@ export default function Header() {
   }
 
   return (
-    <header className="sticky top-0 z-50 bg-sake-dark text-sake-cream shadow-lg">
+    <header className="sticky top-0 z-50 bg-primary-dark text-text-light shadow-lg">
       <nav className="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* ロゴ */}
         <Link href="/" className="font-bold text-2xl">
@@ -33,7 +33,7 @@ export default function Header() {
             href="https://example-shop.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="bg-sake-brown hover:bg-opacity-80 px-4 py-2 rounded transition"
+            className="bg-accent-orange hover:bg-accent-orange-light px-4 py-2 rounded transition text-gray-900 font-semibold"
           >
             ショップ
           </a>
@@ -41,7 +41,7 @@ export default function Header() {
 
         {/* モバイルメニューボタン */}
         <button
-          className="md:hidden text-sake-cream text-2xl"
+          className="md:hidden text-text-light text-2xl"
           onClick={toggleMobileMenu}
           aria-label="メニュー"
         >
@@ -51,7 +51,7 @@ export default function Header() {
 
       {/* モバイルナビゲーション */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-sake-brown text-sake-cream">
+        <div className="md:hidden bg-primary-green text-text-light">
           <div className="flex flex-col gap-4 px-4 py-4">
             <Link
               href="/about"
@@ -78,7 +78,7 @@ export default function Header() {
               href="https://example-shop.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-sake-dark hover:bg-opacity-80 px-4 py-2 rounded transition inline-block"
+              className="bg-accent-orange hover:bg-accent-orange-light px-4 py-2 rounded transition inline-block text-gray-900 font-semibold"
             >
               ショップ
             </a>
