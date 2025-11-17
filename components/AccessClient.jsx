@@ -42,10 +42,10 @@ export default function AccessClient() {
     <>
       {/* お問い合わせフォーム */}
       <section className="mb-16">
-        <h2 className="text-3xl font-bold text-sake-dark mb-6">お問い合わせ</h2>
-        <div className="bg-white border-2 border-sake-dark rounded-lg p-8">
+        <h2 className="text-3xl font-bold text-accent-orange mb-6">お問い合わせ</h2>
+        <div className="bg-primary-green border-2 border-accent-orange rounded-lg p-8">
           {submitted && (
-            <div className="mb-6 p-4 bg-green-100 text-green-800 rounded-lg">
+            <div className="mb-6 p-4 bg-accent-orange/20 text-accent-orange rounded-lg">
               ✓ お問い合わせいただきありがとうございます。
               確認次第、ご連絡させていただきます。
             </div>
@@ -54,8 +54,8 @@ export default function AccessClient() {
           <form onSubmit={handleSubmit} className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  氏名 <span className="text-red-500">*</span>
+                <label className="block text-sm font-semibold text-text-light mb-2">
+                  氏名 <span className="text-accent-orange">*</span>
                 </label>
                 <input
                   type="text"
@@ -63,14 +63,14 @@ export default function AccessClient() {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-sake-dark"
+                  className="w-full px-4 py-2 border-2 border-accent-orange/30 rounded-lg focus:outline-none focus:border-accent-orange bg-gray-900 text-text-light"
                   placeholder="山田 太郎"
                 />
               </div>
 
               <div>
-                <label className="block text-sm font-semibold text-gray-700 mb-2">
-                  メールアドレス <span className="text-red-500">*</span>
+                <label className="block text-sm font-semibold text-text-light mb-2">
+                  メールアドレス <span className="text-accent-orange">*</span>
                 </label>
                 <input
                   type="email"
@@ -78,14 +78,14 @@ export default function AccessClient() {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-sake-dark"
+                  className="w-full px-4 py-2 border-2 border-accent-orange/30 rounded-lg focus:outline-none focus:border-accent-orange bg-gray-900 text-text-light"
                   placeholder="example@example.com"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
+              <label className="block text-sm font-semibold text-text-light mb-2">
                 電話番号 (任意)
               </label>
               <input
@@ -93,20 +93,20 @@ export default function AccessClient() {
                 name="phone"
                 value={formData.phone}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-sake-dark"
+                className="w-full px-4 py-2 border-2 border-accent-orange/30 rounded-lg focus:outline-none focus:border-accent-orange bg-gray-900 text-text-light"
                 placeholder="025-XXX-XXXX"
               />
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                ご用件 <span className="text-red-500">*</span>
+              <label className="block text-sm font-semibold text-text-light mb-2">
+                ご用件 <span className="text-accent-orange">*</span>
               </label>
               <select
                 name="type"
                 value={formData.type}
                 onChange={handleChange}
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-sake-dark"
+                className="w-full px-4 py-2 border-2 border-accent-orange/30 rounded-lg focus:outline-none focus:border-accent-orange bg-gray-900 text-text-light"
               >
                 <option value="inquiry">お問い合わせ</option>
                 <option value="visit">見学予約</option>
@@ -116,8 +116,8 @@ export default function AccessClient() {
             </div>
 
             <div>
-              <label className="block text-sm font-semibold text-gray-700 mb-2">
-                お問い合わせ内容 <span className="text-red-500">*</span>
+              <label className="block text-sm font-semibold text-text-light mb-2">
+                お問い合わせ内容 <span className="text-accent-orange">*</span>
               </label>
               <textarea
                 name="content"
@@ -125,14 +125,14 @@ export default function AccessClient() {
                 onChange={handleChange}
                 required
                 rows="5"
-                className="w-full px-4 py-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:border-sake-dark resize-none"
+                className="w-full px-4 py-2 border-2 border-accent-orange/30 rounded-lg focus:outline-none focus:border-accent-orange bg-gray-900 text-text-light resize-none"
                 placeholder="お問い合わせ内容をご入力ください"
               ></textarea>
             </div>
 
             <button
               type="submit"
-              className="w-full bg-sake-dark hover:bg-sake-brown text-sake-cream px-6 py-3 rounded-lg font-semibold transition duration-300"
+              className="w-full bg-accent-orange hover:bg-accent-orange-light text-gray-900 px-6 py-3 rounded-lg font-semibold transition duration-300"
             >
               送信する
             </button>

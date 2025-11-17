@@ -26,9 +26,9 @@ export default function ProductsSection() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-sake-cream">
+    <section className="py-16 md:py-24 bg-primary-green/10">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-sake-dark">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-accent-orange">
           主要商品
         </h2>
 
@@ -36,17 +36,17 @@ export default function ProductsSection() {
           {products.map((product) => (
             <div
               key={product.id}
-              className="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300"
+              className="bg-primary-green rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition duration-300 border border-accent-orange/20"
             >
-              <div className="h-48 bg-gradient-to-br from-sake-dark to-sake-brown flex items-center justify-center text-5xl">
+              <div className="h-48 bg-gradient-to-br from-primary-dark to-primary-green flex items-center justify-center text-5xl">
                 🍶
               </div>
               <div className="p-6">
-                <h3 className="text-xl font-bold text-sake-dark mb-2">
+                <h3 className="text-xl font-bold text-accent-orange mb-2">
                   {product.name}
                 </h3>
-                <p className="text-gray-600 text-sm mb-4">{product.description}</p>
-                <p className="text-2xl font-bold text-sake-brown mb-4">
+                <p className="text-text-light/80 text-sm mb-4">{product.description}</p>
+                <p className="text-2xl font-bold text-accent-orange-light mb-4">
                   {product.price}
                 </p>
               </div>
@@ -59,7 +59,7 @@ export default function ProductsSection() {
             href="https://example-shop.com"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block bg-sake-dark hover:bg-sake-brown text-sake-cream px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105"
+            className="inline-block bg-accent-orange hover:bg-accent-orange-light text-gray-900 px-8 py-3 rounded-lg font-semibold transition duration-300 transform hover:scale-105"
           >
             ショップを見る
           </a>

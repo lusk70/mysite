@@ -26,20 +26,20 @@ export default function NavigationCards() {
   ]
 
   return (
-    <section className="py-16 md:py-24 bg-white">
+    <section className="py-16 md:py-24 bg-bg-dark">
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-sake-dark">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-accent-orange">
           詳しく知る
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {cards.map((card) => (
             <Link key={card.id} href={card.link}>
-              <div className="bg-gradient-to-br from-sake-dark to-sake-brown rounded-lg shadow-lg p-8 text-sake-cream cursor-pointer hover:shadow-2xl hover:scale-105 transition duration-300 transform h-full">
+              <div className="bg-gradient-to-br from-primary-green to-primary-dark rounded-lg shadow-lg p-8 text-text-light cursor-pointer hover:shadow-2xl hover:scale-105 transition duration-300 transform h-full border border-accent-orange/20">
                 <div className="text-5xl mb-4">{card.icon}</div>
                 <h3 className="text-2xl font-bold mb-2">{card.title}</h3>
-                <p className="text-sake-cream/90 mb-4">{card.description}</p>
-                <span className="inline-block bg-sake-brown hover:bg-opacity-80 px-4 py-2 rounded transition">
+                <p className="text-text-light/90 mb-4">{card.description}</p>
+                <span className="inline-block bg-accent-orange hover:bg-accent-orange-light px-4 py-2 rounded transition text-gray-900 font-semibold">
                   詳しく見る →
                 </span>
               </div>

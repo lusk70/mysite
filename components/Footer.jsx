@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function Footer() {
   return (
-    <footer className="bg-sake-dark text-sake-cream mt-20">
+    <footer className="bg-primary-dark text-text-light mt-20">
       <div className="max-w-6xl mx-auto px-4 py-12">
         {/* メインコンテンツ */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
@@ -75,7 +75,7 @@ export default function Footer() {
         </div>
 
         {/* 下部情報 */}
-        <div className="border-t border-sake-brown pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
+        <div className="border-t border-accent-orange pt-8 flex flex-col md:flex-row justify-between items-center text-sm">
           <p>&copy; 2024 mysite. All Rights Reserved.</p>
           <div className="flex gap-4 mt-4 md:mt-0">
             <Link href="#" className="hover:text-white transition">
